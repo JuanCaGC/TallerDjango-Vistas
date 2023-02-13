@@ -13,7 +13,6 @@ def update_measurement(mea_pk, new_mea):
     measurement.value = new_mea["value"]
     measurement.unit = new_mea["unit"]
     measurement.place = new_mea["place"]
-    measurement.dateTime = new_mea["dateTime"]
     measurement.save()
     return measurement
 
